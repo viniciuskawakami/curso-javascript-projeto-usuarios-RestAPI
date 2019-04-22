@@ -6,7 +6,7 @@ let db = new NeDB({
 
 module.exports = app => {
 
-    let route = app.route('/users');
+    let route = app.route('/api/v1/users');
 
     route.get((req, res) => {
 
@@ -46,7 +46,7 @@ module.exports = app => {
 
     });
 
-    let routeId = app.route('/users/:id');
+    let routeId = app.route('/api/v1/users/:id');
 
     routeId.get((req, res) => {
 
